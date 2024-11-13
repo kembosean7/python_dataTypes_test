@@ -124,7 +124,7 @@ def change_bob_grade(student_grades):
     """
     
     
-    del student_grades["Bob"] 
+    student_grades["Bob"]  = 95
     return student_grades
 
 
@@ -137,6 +137,9 @@ def delete_charlie(student_grades):
     Return:
     - The updated dictionary with Charlie removed.
     """
+
+    del student_grades["Charlie"]
+    return student_grades
     
 
 
@@ -148,4 +151,4 @@ def retrieve_alice_grade(student_grades):
     Return:
     - Alice's grade.
     """
-    pass
+    return student_grades["Alice"]
